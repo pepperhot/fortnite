@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,18 +27,21 @@
             border-radius: 5px;
             background: white;
         }
-        button {
+        .custom-button {
             width: 100%;
             padding: 10px;
             background-color: #0073e6;
             color: white;
+            text-decoration: none;
             border: none;
             border-radius: 5px;
             font-size: 16px;
             cursor: pointer;
             transition: background 0.3s;
+            display: inline-block;
+            text-align: center;
         }
-        button:hover {
+        .custom-button:hover {
             background-color: #005bb5;
         }
         h2{
@@ -50,13 +53,8 @@
 
     <div class="login-container">
         <h2>Connexion Epic Games</h2>
-        <form>
-            <input type="email" placeholder="Email" required>
-            <input type="password" placeholder="Mot de passe" required>
-            <button type="submit">
-                <a href="login.html" class="custom-button">Se connecter</a>
-            </button>
-        </form>
+        <!-- Utilisation de <a> pour la redirection sans formulaire -->
+        <a href="login.html" class="custom-button">Se connecter</a>
     </div>
 
 </body>
